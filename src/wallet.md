@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Wallet
+permalink: /items/wallet/
 ---
 
 ![Wallet](/assets/images/wallet.jpg)

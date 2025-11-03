@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Keys
+permalink: /items/keys/
 ---
 
 ![Keys](/assets/images/keys.jpg)

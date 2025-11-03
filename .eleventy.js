@@ -1,8 +1,11 @@
 module.exports = function(eleventyConfig) {
-  // Copy images and CSS to output folder
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // Copy images and styles to /assets/*
+  eleventyConfig.addPassthroughCopy({
+    "src/images": "assets/images",
+    "src/styles": "assets/css"
+  });
 
-  // Example shortcode for a reusable "item card"
+  // Example shortcode (keep your existing one if present)
   eleventyConfig.addShortcode("itemCard", function(title, image, desc, link) {
     return `
       <div class="item-card">

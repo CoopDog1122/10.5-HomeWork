@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Phone
+permalink: /items/phone/
 ---
 
 ![Phone](/assets/images/phone.jpg)
