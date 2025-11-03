@@ -1,8 +1,17 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+  "name": "everyday-carry-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Everyday carry website built with 11ty",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-upgrade-help": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
