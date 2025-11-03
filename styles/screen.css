@@ -1,50 +1,89 @@
+/* ====== Global Styles ====== */
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9f9;
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+/* ====== Header ====== */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+header a:hover {
+  text-decoration: underline;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+/* ====== Footer ====== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+/* ====== Item Cards ====== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 1em;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.item-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1em;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
 }
 
-img.about {
-    opacity: 0.5;
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item-card h3 {
+  color: #003366;
+  margin-top: 0.5em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #004c99;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
